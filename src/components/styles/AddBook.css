@@ -1,0 +1,65 @@
+/* components/AddBook.css */
+.add-book-form {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  form {
+    display: grid;
+    gap: 16px;
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      label {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      justify-self: end;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .add-book-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-group label {
+    margin-bottom: 6px;
+  }
+
+  button {
+    justify-self: center;
+  }
+}

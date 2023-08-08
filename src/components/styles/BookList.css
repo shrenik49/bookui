@@ -1,0 +1,32 @@
+/* styles/BookList.css */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .book-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  
+    h3 {
+      margin-top: 0;
+    }
+  
+    p {
+      margin: 8px 0;
+      color: #555;
+    }
+  }
+  
